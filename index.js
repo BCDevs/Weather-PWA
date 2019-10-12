@@ -46,7 +46,7 @@ var object;
     humidity.innerHTML = "Humidity: " +(object.currently.humidity)*100+ "%";
     pressure.innerHTML = "Pressure: " + object.currently.pressure + "mb";
     uvIndex.innerHTML = "UVIndex: " + object.currently.uvIndex;
-    weatherIcon.src = '"images/"+object.currently.icon+".svg"';
+    weatherIcon.src = "images/"+object.currently.icon+".svg";
     temperature.innerHTML =Math.round((object.currently.temperature-32)*0.555)+ " °C" + " / " + object.currently.temperature + " °F";
     windBearing.innerHTML = "Direction: " +object.currently.windBearing+ "°";
     windSpeed.innerHTML = "Wind: " +Math.round(object.currently.windSpeed*1.852)+ " Km/h";
