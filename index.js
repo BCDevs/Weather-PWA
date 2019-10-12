@@ -1,23 +1,14 @@
-var humidity;
-var weatherIcon;
-var pressure;
-var uvIndex;
-var temperature;
-var temperatureIcon;
-var windBearing;
-var windSpeed;
-var weatherSummary;
 
 window.onload = function() {
-  humidity = document.getElementById("current-humidity");
-  weatherIcon = document.getElementById("weather-icon");
-  pressure = document.getElementById("current-pressure");
-  uvIndex = document.getElementById("current-uvIndex");
-  temperature = document.getElementById("current-temperature");
-  temperatureIcon = document.getElementById("temperature-icon");
-  windBearing = document.getElementById("current-wind-bearing");
-  windSpeed = document.getElementById("current-wind-speed");
-  weatherSummary = document.getElementById("weather-summary");
+  let humidity = document.getElementById("current-humidity");
+  let weatherIcon = document.getElementById("weather-icon");
+  let pressure = document.getElementById("current-pressure");
+  let uvIndex = document.getElementById("current-uvIndex");
+  let temperature = document.getElementById("current-temperature");
+  let temperatureIcon = document.getElementById("temperature-icon");
+  let windBearing = document.getElementById("current-wind-bearing");
+  let windSpeed = document.getElementById("current-wind-speed");
+  let weatherSummary = document.getElementById("weather-summary");
 }
 function getLocation() {
   if (navigator.geolocation) {
