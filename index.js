@@ -1,9 +1,9 @@
 function randomNotification() {
        var options = {
-        body: 'Hello.. Buddy!!',
+        body: 'This is Sweety, Your Weather Assistant Made with 💖 by Salman.',
         icon: 'images/Weather-icon.png'
     }
-    var notif = new Notification('This is Sweety..Your Weather Assistant', options);
+    var notif = new Notification('Hello..Buddy!!', options);
 }
 window.onload = function() {
   Notification.requestPermission(result => {
