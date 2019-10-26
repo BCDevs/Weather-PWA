@@ -1,7 +1,7 @@
 function randomNotification() {
        var options = {
         body: 'Hello.. Buddy!!',
-        icon: 'images/icon.jpeg'
+        icon: 'images/Weather-icon.png'
     }
     var notif = new Notification('This is Sweety..Your Weather Assistant', options);
 }
