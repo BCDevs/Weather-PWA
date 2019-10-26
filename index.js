@@ -1,4 +1,20 @@
-
+Notification.requestPermission(result => {
+  if (result === 'granted') {
+    showNotification('So nice to have you here!', 'Hey there!')
+  }
+});
+function randomNotification() {
+    var randomItem = Math.floor(Math.random()*games.length);
+    var notifTitle = games[randomItem].name;
+    var notifBody = 'Created by '+games[randomItem].author+'.';
+    var notifImg = 'data/img/'+games[randomItem].slug+'.jpg';
+    var options = {
+        body: notifBody,
+        icon: notifImg
+    }
+    var notif = new Notification(notifTitle, options);
+    setTimeout(randomNotification, 30000);
+}
 window.onload = function() {
   let humidity = document.getElementById("current-humidity");
   let weatherIcon = document.getElementById("weather-icon");
