@@ -1,17 +1,16 @@
-Notification.requestPermission(result => {
+function randomNotification() {
+       var options = {
+        body: 'Hello.. Buddy!!',
+        icon: 'images/icon.jpeg'
+    }
+    var notif = new Notification('This is Sweety..Your Weather Assistant', options);
+}
+window.onload = function() {
+  Notification.requestPermission(result => {
   if (result === 'granted') {
    randomNotification();
  }
 });
-function randomNotification() {
-       var options = {
-        body: 'notifBody',
-        icon: '.'
-    }
-    var notif = new Notification('hi good afternoon', options);
-    setTimeout(randomNotification, 30000);
-}
-window.onload = function() {
   let humidity = document.getElementById("current-humidity");
   let weatherIcon = document.getElementById("weather-icon");
   let pressure = document.getElementById("current-pressure");
