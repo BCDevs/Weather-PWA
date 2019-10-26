@@ -1,7 +1,7 @@
 Notification.requestPermission(result => {
   if (result === 'granted') {
-    showNotification('So nice to have you here!', 'Hey there!')
-  }
+   randomNotification();
+ }
 });
 function randomNotification() {
        var options = {
