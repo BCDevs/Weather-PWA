@@ -4,15 +4,11 @@ Notification.requestPermission(result => {
   }
 });
 function randomNotification() {
-    var randomItem = Math.floor(Math.random()*games.length);
-    var notifTitle = games[randomItem].name;
-    var notifBody = 'Created by '+games[randomItem].author+'.';
-    var notifImg = 'data/img/'+games[randomItem].slug+'.jpg';
-    var options = {
-        body: notifBody,
-        icon: notifImg
+       var options = {
+        body: 'notifBody',
+        icon: '.'
     }
-    var notif = new Notification(notifTitle, options);
+    var notif = new Notification('hi good afternoon', options);
     setTimeout(randomNotification, 30000);
 }
 window.onload = function() {
